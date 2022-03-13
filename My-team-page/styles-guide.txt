@@ -1,0 +1,73 @@
+-Mobile
+*Main-heading
+    font-family: PT Serif
+    font-weight: 700, bold
+    font-size: 36px
+    letter-spacing: -4.5%
+    color: #000
+
+*Sub-heading    
+    font-family: Poppins
+    font-weight:600, semi bold
+    font-size: 18px
+    #000
+
+*Paragraph
+    font-family: Poppins
+    font-weight: 400, regular
+    font-size: 14px
+    line-height: 21px
+    color: #000
+
+*Images
+    width: 138px
+    height: 209px
+
+*Job-title
+    font-family: PT Serif
+    font-weight: 400
+    font-size: 10px
+    color: #000
+
+*Full_name
+   font-family: Poppins
+   font-weight: 600
+   font-size: 14px
+   color:  #000
+
+-Desktop
+*Main-heading
+    font-family: PT Serif
+    font-weight: 700, bold
+    font-size: 36px
+    letter-spacing: -4.5%
+    color: #000
+
+*Sub-heading    
+    font-family: Poppins
+    font-weight:600, semi bold
+    font-size: 18px
+    #000
+
+*Paragraph
+    font-family: Poppins
+    font-weight: 400, regular
+    font-size: 18px
+    line-height: 27px
+    color: #000
+
+*Images
+    width: 238px
+    height: 347px
+
+*Job-title
+    font-family: PT Serif
+    font-weight: 400
+    font-size: 10px
+    color: #000
+
+*Full_name
+   font-family: Poppins
+   font-weight: 600
+   font-size: 14px
+   color:  #000

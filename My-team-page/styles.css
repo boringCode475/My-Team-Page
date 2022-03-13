@@ -1,0 +1,157 @@
+/* Custom properties => variables */
+:root {
+    /* fonts */
+    --font-Serif: 'PT Serif';
+    --font-Poppins: Poppins;
+    /* display */
+    --flex: flex;
+}
+
+/* resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 40px 15px 0px 15px;
+}
+
+/* document styles */
+:is(h1, .job-title) {
+    font-family: var(--font-Serif, sans-serif);
+}
+
+:is(h3, p, figcaption) {
+    font-family: var(--font-Poppins, Arial);
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -4.5%;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 50px;
+    text-align: justify;
+}
+
+.job-title {
+    font-size: 10px;
+    font-weight: 400; 
+}
+
+img {
+    width: 138px;
+    height: 209px;
+    /* margin-bottom: px; */
+}
+
+figcaption {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* profiles */
+.container {
+    display: var(--flex);
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+    /* background-color: aqua; */
+}
+
+.profile {
+    margin-bottom: 25px;
+}
+
+.profile:nth-child(2n + 2) {
+    padding-top: 40px;
+    margin-left: 35px;
+}
+
+.image_title {
+    display: var(--flex);
+    position: relative;
+}
+
+.image_title p {
+    /* this line is 'vertical-rl' - read from right to left and top to bottom */
+    writing-mode: vertical-rl;
+}
+
+/* footer */
+footer p {
+    text-align: center;
+    color: darkgray;
+    margin: 30px 0px;
+}
+
+p > a {
+    text-decoration: none;
+    color: gray;
+}
+
+/* breakpoints */
+
+@media screen and (min-width: 505px) and (max-width: 695px) {
+    img {
+        width: 200px;
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 696px) {
+    img {
+        width: 238px;
+        height: 347px;
+    }
+}
+
+@media screen and (min-width: 830px) {
+    .container {
+        max-width: 950px;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+
+    header {
+        display: var(--flex);
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 20px 115px;
+    }
+
+    h1 {
+        flex-basis: 60%;
+    }
+
+    .about-us {
+        flex-basis: 40%;
+    }
+
+    .profile {
+        margin-bottom: 20px;
+    }
+
+    .profile:nth-child(2n + 2) {
+        padding-top: 0px;
+        margin-left: 0px;
+    }
+
+    :is(.profile.two, .profile.five) {
+        padding-top: 40px;
+    }
+}
